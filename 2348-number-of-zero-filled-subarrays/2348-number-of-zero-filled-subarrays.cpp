@@ -9,12 +9,10 @@ public:
                 zero_count+=1;
             }
             else {
-                subarray_count+=((zero_count)*(zero_count+1))/2;
+                
                 zero_count = 0 ;
             }
-        }
-        if(zero_count){
-            subarray_count+=((zero_count)*(zero_count+1))/2;
+            subarray_count+=zero_count;
         }
         return subarray_count;
     }   
